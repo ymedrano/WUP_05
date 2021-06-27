@@ -47,7 +47,7 @@ basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
   
-The plot show that you are more liekly to get aids if you take the drug. The odds of getting aid if you take the drug are 3 to 2, and you are 1 and 1/2 times more likely to get aids if you take the drug.  
+The plot show that you are more liekly to get aids if you take the drug. The odds of getting aids if you take the drug are 3 to 2, and you are 1 and 1/2 times more likely to get aids if you take the drug.  
 
 ### Numerical Descriptive Results
 
@@ -71,9 +71,12 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
-
-the null hypothesis ratio is one. we will reject the null hypothesis.
+  
+the null hypothesis ratio is one. we will reject the null hypothesis.  
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+  
+The data shows that the odds of getting aids after taking the drug are 59 to 41. This means that females who have taken the drug are more likely to get aids.   
+
