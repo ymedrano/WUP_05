@@ -46,12 +46,21 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
-
+  
 The plot show that you are more liekly to get aids if you take the drug. The odds of getting aid if you take the drug are 3 to 2, and you are 1 and 1/2 times more likely to get aids if you take the drug.  
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=females)
+rowPerc(table1)
+colPerc(table1)
+```
+  
+This shows that the actual odds are 59 to 41.  
 
 ## Inferential Results
 
